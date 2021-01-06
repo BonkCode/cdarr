@@ -40,7 +40,7 @@ pop(&a, 2); // pop value from the array
 free_cdarr(&a); // free array after using it
 ```
 
-## Some stuff about specifics
+## Fucntions
 
 ```c
 t_cdarr	*init_cdarr(t_cdarr *arr);
