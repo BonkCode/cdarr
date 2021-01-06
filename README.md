@@ -1,6 +1,6 @@
 # cdarr
 
-cdarr is a small library that implements dynamically growing arrays in c.
+cdarr is a small library that implements dynamically growing arrays in C.
 
 ## Description
 
