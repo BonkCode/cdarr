@@ -2,6 +2,12 @@
 
 cdarr is a small library that implements dynamically growing arrays in c.
 
+## Description
+
+This is my take on dynamically growing int arrays in C. Simple to use, lightweight and fast.
+Simplifies work with int arrays, since you don't need to allocate any memory by hand, which is(memory allocation)
+confusing when you start learning C.
+
 ## Installation
 
 Use git to clone the repository, then compile it using its Makefile and use cdarr.a to compile with your project.
@@ -10,11 +16,14 @@ Use git to clone the repository, then compile it using its Makefile and use cdar
 git clone https://github.com/BonkCode/cdarr.git
 make -C cdarr
 mv cdarr/cdarr.a .
+gcc -Icdarr mysourcecode.c cdarr.a -o myexecutable.out
 ```
 
 ## Usage
 
 ```c
+#include "cdarr.h" // don't forget to include the library
+
 t_cdarr a;
 
 init_cdarr(&a); // initialize the array
